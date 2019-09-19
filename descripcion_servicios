@@ -1,0 +1,43 @@
+http://localhost:8886/conductores POST JSON BODY
+
+
+
+{      "tipoDocumento": "TI",
+        "nombres": "robert",
+	"documento":"8109685",
+        "apellidos": "martinez",
+        "fecha_nacimiento": "02/25/1992",
+        "fecha_inscripcion": "20/09/2017",
+        "estado": "INACTIVO"
+}
+
+
+http://localhost:8886/conductores/info/C/1144057212 PUT JSON BODY
+
+{      "tipoDocumento": "C",
+        "nombres": "William David",
+        "apellidos": "Hidalgo Rotavisqui",
+        "fecha_nacimiento": "02/25/1992",
+        "fecha_inscripcion": "20/09/2017",
+        "estado": "ACTIVO"
+}
+
+
+
+http://localhost:8886/conductores/C/1144057212/ GET
+
+RESULT:
+
+	[
+		{
+		"_id": "5d7ff3dbb671b768bf4e9cba",
+		"tipoDocumento": "C",
+		"documento": "1144057212",
+		"nombres": "William David",
+		"apellidos": "HIDALGO ROTAVISKY",
+		"fecha_nacimiento": "11/25/1992",
+		"fecha_inscripcion": "20/09/2019",
+		"estado": "ACTIVO",
+		"__v": 0
+		}
+	]
